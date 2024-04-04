@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "InventoryApp",
-    "slug": "InventoryApp",
+    "slug": "inventoryapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,31 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jmachuta.InventoryApp",
+      "runtimeVersion": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "runtimeVersion": {
+        "policy": "appVersion"
+      },
+      "package": "com.jmachuta.InventoryApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "27413f61-b58f-444d-9bca-db0673c9e56c"
+      }
+    },
+    "owner": "jmachuta",
+    "updates": {
+      "url": "https://u.expo.dev/27413f61-b58f-444d-9bca-db0673c9e56c"
     }
   }
 }
